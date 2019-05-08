@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import BeetleSorter from './Components/BeeteSorter'
+import BeetleSorter from './Components/BeetleSorter'
 import CommunitySection from './Components/CommunitySection';
 
 
