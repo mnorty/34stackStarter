@@ -19,15 +19,18 @@ class AllEvents extends Component {
   }
 
   render(){
-    const events = this.state.map((event) => {
+    const events = this.state.events.map((event) => {
       return (
-        
+        <li key={event.id}>
+          <h3>{event.name}</h3>
+          <p>{event.funLevel}</p>
+        </li>
       )
     })
     return(
       <div>
         <h1>All Events</h1>
-        <ul></ul>
+        <ul>{events}</ul>
       </div>
     )
   }
