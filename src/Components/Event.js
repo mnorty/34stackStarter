@@ -5,13 +5,20 @@ class Event extends Component {
   constructor(){
     super()
     this.state = {
-      selectedID: null
+      selectedID: null,
+      selectedEvent: null
     }
   }
 
   handeGetEventById = () =>{
-    axios.get('/api/event/2').then((res) => {
+    axios.get('/api/event/${thi.state.selection}').then((res) => {
       console.log(res.data)
+    })
+  }
+
+  handleUpdateId = (e) => {
+    this.setState({
+      selectedID: e.target.value
     })
   }
 

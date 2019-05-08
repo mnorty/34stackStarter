@@ -1,0 +1,23 @@
+#header{
+  background: lightgray;
+  height: 3em;
+}
+
+.paraPic{
+  background: lightblue;
+  height:20vh;
+}
+.titleCard{
+  background: lightgoldenrodyellow;
+  height: 15vh;
+}
+
+.beetleSorter{
+  background:lightgray;
+  height:50vh;
+}
+
+.displayCard{
+  background: lightcyan;
+  height:80vh;
+}
