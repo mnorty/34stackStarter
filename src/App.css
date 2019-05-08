@@ -3,24 +3,37 @@
   height: 3em;
 }
 
-.body{
+/* .body{
   margin:3em ,0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.middle{
+  margin:3em ,0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .paraPic{
   background: lightblue;
   height:20vh;
+  width: 100%;
 }
 .titleCard{
   background: lightgoldenrodyellow;
   height: 15vh;
+  width: 75vw;
 }
 
 .beetleSorter{
   background:lightgray;
   height:50vh;
+  width: 75vw;
 }
 
 .displayCard{
   background: lightcyan;
-  height:80vh;
+  min-height:30vh;
 }
