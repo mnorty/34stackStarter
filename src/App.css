@@ -3,6 +3,9 @@
   height: 3em;
 }
 
+.body{
+  margin:3em ,0em;
+}
 .paraPic{
   background: lightblue;
   height:20vh;
