@@ -16,7 +16,7 @@ function TopPic(){
   return(
   <div className="ParaPic">
     <Parallax bgImage={image1} strength= {-400}>
-      <div style={{ height: 550 }}>
+      <div style={{ height: 250 }}>
       </div>
     </Parallax>
   

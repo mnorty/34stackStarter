@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import BeetleSorter from './Components/Käfer.sorter/BeetleSorter'
-import CommunitySection from './Components/Käfer.community/Pokemon';
+import CommunitySection from './Components/Käfer.community/Beetle';
 import TopPic from './Components/Pictures/TopPic';
 
 
@@ -10,9 +10,10 @@ function App() {
     <div className="App">
       <header id='header'>Kafer Chasers</header>
       <body className="middle">
-        {/* <div className="paraPic">place holder for picture</div> */}
-        <TopPic/>
+        <div className="paraPic">place holder for picture</div>
+        {/* <TopPic/> */}
         <BeetleSorter/>
+        {/* <TopPic/> */}
         <div className="paraPic">place holder for picture</div>
         <CommunitySection/>
       </body>
