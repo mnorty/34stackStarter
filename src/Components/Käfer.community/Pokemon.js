@@ -17,7 +17,7 @@ class Pokemon extends Component {
     }
 
     handleGetPokemon = () => {
-        axios.get('/api/pokemon')
+        axios.get('http://localhost:5056/api/pokemon')
         .then(res => {
             this.setState({
                 pokemon: res.data
