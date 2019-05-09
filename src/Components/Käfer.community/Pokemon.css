@@ -5,11 +5,12 @@
 }
 
 .beetles {
-  height: 500px;
+  min-height:20vw;
   width: 75vw;
   background-color: lightgray;
   /* opacity: .7; */
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -19,4 +20,5 @@
 
 .pokemon-pictures {
   height: 20vh;
+  min-width: 15vw;
 }
