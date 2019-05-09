@@ -12,11 +12,11 @@ class PokemonDisplay extends Component {
 
     render(){
         return (
-        <div>
-            <h4 className='beetle-name'>{this.props.pokemon.name}</h4>
+        <div className="beetlePost">
+            <h4 className='beetle-year'>{this.props.pokemon.year}</h4>
             <img src={this.props.pokemon.image} alt='"Groovy Bug man"' className='beetle-pictures'/>
-            <button onClick={this.handleDeleteBeetle}>Delete</button>
-            <button onClick={this.handleDeleteBeetle}>Edit</button>     
+            <button className="postButton"onClick={this.handleDeleteBeetle}>Delete</button>   
+            <button className="postButton"onClick={this.handleDeleteBeetle}>Edit</button>     
         </div>
     )
     }
