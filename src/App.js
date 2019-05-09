@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import BeetleSorter from './Components/BeetleSorter'
-import CommunitySection from './Components/CommunitySection';
+import BeetleSorter from './Components/Käfer.sorter/BeetleSorter'
+import CommunitySection from './Components/Käfer.community/Pokemon';
 
 
 function App() {
