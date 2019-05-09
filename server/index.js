@@ -8,5 +8,5 @@ app.use(express(json()));
 app.get('/api/pokemon', ctrl.getPokemon);
 app.delete('/api/pokemon/:id', ctrl.deletePokemon);
 
-const server_port = 4041;
+const server_port = 5056;
 app.listen(server_port, () => console.log(`Aircooled Magic at port: ${server_port}`))
