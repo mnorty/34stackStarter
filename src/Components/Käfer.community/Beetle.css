@@ -5,20 +5,22 @@
 }
 
 .beetles {
-  min-height:20vw;
+  min-height:0vh;
+  max-height:100vh;
   width: 75vw;
   background-color: lightgray;
   /* opacity: .7; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.pokemon-name {
+.beetle-name {
   color: black;
 }
 
-.pokemon-pictures {
+.beetle-pictures {
   height: 20vh;
   min-width: 15vw;
 }
