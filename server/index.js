@@ -8,8 +8,8 @@ app.use(cors());
 app.use(express(json()));
 
 
-app.get('/api/pokemon', ctrl.getPokemon);
-app.delete('/api/pokemon/:id', ctrl.deletePokemon);
+app.get('/api/beetles', ctrl.getBeetle);
+app.delete('/api/beetle/:id', ctrl.deleteBeetle);
 
 const server_port = 5056;
 app.listen(server_port, () => console.log(`Aircooled Magic at port: ${server_port}`))

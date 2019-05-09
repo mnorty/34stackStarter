@@ -2,19 +2,19 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import './Beetle.css';
 
-class PokemonDisplay extends Component {
+class BeetleDisplay extends Component {
     handleDeleteBeetle = () => {
-        axios.delete(`/api/pokemon/${this.props.pokemon.id}`)
+        axios.delete(`/api/beetle/${this.props.beetle.id}`)
         .then(res => {
-            this.props.deletePokemon(res.data)
+            this.props.deleteBeetle(res.data)
         })
     }
 
     render(){
         return (
         <div className="beetlePost">
-            <h4 className='beetle-year'>{this.props.pokemon.year}</h4>
-            <img src={this.props.pokemon.image} alt='"Groovy Bug man"' className='beetle-pictures'/>
+            <h4 className='beetle-year'>{this.props.beetle.year}</h4>
+            <img src={this.props.beetle.image} alt='"Groovy Bug man"' className='beetle-pictures'/>
             <button className="postButton"onClick={this.handleDeleteBeetle}>Delete</button>   
             <button className="postButton"onClick={this.handleDeleteBeetle}>Edit</button>     
         </div>
@@ -22,4 +22,4 @@ class PokemonDisplay extends Component {
     }
 }
 
-export default PokemonDisplay;
+export default BeetleDisplay;

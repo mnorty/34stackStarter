@@ -3,11 +3,11 @@ import axios from 'axios';
 import BeetleDisplay from './BeetleDisplay';
 import './Beetle.css'
 
-class Pokemon extends Component {
+class Beetle extends Component {
     constructor(props){
         super(props);
         this.state = {
-            pokemon: []
+            beetle: []
         }
     }
 
@@ -16,26 +16,26 @@ class Pokemon extends Component {
     }
 
     handleGetBeetle = () => {
-        axios.get('http://localhost:5056/api/pokemon')
+        axios.get('http://localhost:5056/api/beetles')
         .then(res => {
             this.setState({
-                pokemon: res.data
+                beetle: res.data
             })
         })
     }
 
-    handleDeletePokemon = (data) => {
+    handleDeleteBeetle = (data) => {
         this.setState({
-            pokemon: data
+            beetle: data
         })
     }
 
     render(){
-        const mappedBeetles = this.state.pokemon.map((element, i) => {
+        const mappedBeetles = this.state.beetle.map((element, i) => {
             return (
                 <BeetleDisplay key={i} 
-                                pokemon={element}
-                                deletePokemon={this.handleDeletePokemon}/>
+                                beetle={element}
+                                deleteBeetle={this.handleDeleteBeetle}/>
             )
         })
         return(
@@ -48,4 +48,4 @@ class Pokemon extends Component {
     }
 }
 
-export default Pokemon;
+export default Beetle;
