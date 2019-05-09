@@ -23,11 +23,14 @@ module.exports = {
       res.status(200).send(beetle)
   },
   createBeetle: (req,res) => {
+    console.log(req.body)
     let id = beetle[beetle.length - 1].id +1
     const newbeetle = {
-      year: req.body.name,
+      year: req.body.year,
+      image: req.body.image,
       id: id
     }
     beetle = [...beetle,newbeetle]
+    res.status(200).send(beetle)
   }
 }
