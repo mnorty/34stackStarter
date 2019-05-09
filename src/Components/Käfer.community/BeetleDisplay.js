@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import './Pokemon.css';
+import './Beetle.css';
 
 class PokemonDisplay extends Component {
     handleDeletePokemon = () => {

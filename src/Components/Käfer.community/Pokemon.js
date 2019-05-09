@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import PokemonDisplay from './PokemonDisplay';
-import './Pokemon.css'
+import BeetleDisplay from './BeetleDisplay';
+import './Beetle.css'
 
 class Pokemon extends Component {
     constructor(props){
@@ -12,10 +12,10 @@ class Pokemon extends Component {
     }
 
     componentDidMount(){
-        this.handleGetPokemon()
+        this.handleGetBeetle()
     }
 
-    handleGetPokemon = () => {
+    handleGetBeetle = () => {
         axios.get('http://localhost:5056/api/pokemon')
         .then(res => {
             this.setState({
@@ -31,17 +31,17 @@ class Pokemon extends Component {
     }
 
     render(){
-        const mappedPokemon = this.state.pokemon.map((element, i) => {
+        const mappedBeetles = this.state.pokemon.map((element, i) => {
             return (
-                <PokemonDisplay key={i} 
+                <BeetleDisplay key={i} 
                                 pokemon={element}
                                 deletePokemon={this.handleDeletePokemon}/>
             )
         })
         return(
-            <div className='pokemon-flex-div'>
+            <div className='beetles-flex-div'>
                 <div className='beetles'>
-                    {mappedPokemon}
+                    {mappedBeetles}
                 </div>
             </div>
         ) 
