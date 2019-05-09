@@ -2,31 +2,21 @@
   display: flex;
   justify-content: space-around;
   box-sizing: border-box;
-  padding: 3vh 40px;
 }
 
-.pokemon-trainer-div {
-  width: 300px;
-}
-
-.pokemon-trainer-image {
+.beetles {
   height: 500px;
-}
-
-.pokemon {
-  height: 500px;
-  width: 750px;
-  background-color: black;
-  opacity: .7;
-  border-radius: 20px;
+  width: 75vw;
+  background-color: lightgray;
+  /* opacity: .7; */
   display: flex;
   justify-content: space-around;
 }
 
 .pokemon-name {
-  color: white;
+  color: black;
 }
 
 .pokemon-pictures {
-  height: 200px;
+  height: 20vh;
 }

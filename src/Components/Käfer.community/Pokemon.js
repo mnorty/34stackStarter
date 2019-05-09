@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import PokemonTrainer from './../../Pictures/PokemonTrainer.png'
 import PokemonDisplay from './PokemonDisplay';
 import './Pokemon.css'
 
@@ -41,10 +40,7 @@ class Pokemon extends Component {
         })
         return(
             <div className='pokemon-flex-div'>
-                <div className='pokemon-trainer-div'>
-                    <img src={PokemonTrainer} alt='Pokemon Trainer' className='pokemon-trainer-image' />
-                </div>
-                <div className='pokemon'>
+                <div className='beetles'>
                     {mappedPokemon}
                 </div>
             </div>
