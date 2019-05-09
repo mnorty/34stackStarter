@@ -21,5 +21,13 @@ module.exports = {
       const {id} = req.params;
       beetle = beetle.filter((beetle) => beetle.id !== +id)
       res.status(200).send(beetle)
+  },
+  createBeetle: (req,res) => {
+    let id = beetle[beetle.length - 1].id +1
+    const newbeetle = {
+      year: req.body.name,
+      id: id
+    }
+    beetle = [...beetle,newbeetle]
   }
 }
