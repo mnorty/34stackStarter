@@ -1,6 +1,7 @@
 #header{
   background: lightgray;
-  height: 3em;
+  height: 1.8em;
+  font-size:2em;
 }
 
 /* .body{
@@ -18,19 +19,25 @@
 }
 .paraPic{
   background: lightblue;
-  height:20vh;
+  height:300px;
   width: 100%;
 }
 .titleCard{
   background: lightgoldenrodyellow;
-  height: 15vh;
-  width: 75vw;
+  height: 40vh;
+  width: 45vw;
+  border-radius: 18px;
+  font-size:1.2em;
+  font-weight: 600;
 }
 
 .beetleSorter{
   background:lightgray;
   height:50vh;
   width: 75vw;
+}
+.createTitle{
+
 }
 
 .displayCard{
@@ -40,5 +47,17 @@
 
 .ParaPic{
   width: 100vw;
-  height:5vh;
+  height:50vh;
+}
+#BotPic{
+  margin-bottom:3em;
+}
+.createContainer{
+  background:lightblue;
+  height:25vh;
+  border-radius: 18px;
+  margin-bottom:2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }

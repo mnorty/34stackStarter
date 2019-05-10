@@ -35,18 +35,20 @@ class AddBeetle extends Component {
   render() {
 		return (
 			<div>
-				<h1>Add Beetle</h1>
-				<div>
-        <input
-          onChange={e => this.handleYear(e.target.value)}
-          type="text"
-        />
-        <input
-          onChange={e => this.handleImage(e.target.value)}
-          type="text"
-        />
-        <button onClick={this.handleAddBeetle}>Login</button>
-      </div>
+          <div className='createContainer'>
+          <h1 className="addTitle">Add Your Beetle Here</h1>
+            <div>
+            <input
+              onChange={e => this.handleYear(e.target.value)}
+              type="text"
+            />
+            <input
+              onChange={e => this.handleImage(e.target.value)}
+              type="text"
+            />
+            <button onClick={this.handleAddBeetle}>Login</button>
+          </div>
+        </div>
 			</div>
     )
   }

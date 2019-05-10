@@ -1,12 +1,12 @@
 import React from 'react';
 import {Parallax} from 'react-parallax'
-import background1 from './background2.jpg'
+import background1 from './background3.jpg'
 
 function TopPic(){
   return(
-  <div className="ParaPic">
+  <div className="ParaPic" id='BotPic'>
     <Parallax bgImage={background1} strength= {-250}>
-      <div style={{ height: 450 }}>
+      <div style={{ height: 550 }}>
       </div>
     </Parallax>
   

@@ -32,5 +32,9 @@ module.exports = {
     }
     beetle = [...beetle,newbeetle]
     res.status(200).send(beetle)
+  },
+  changeBeetle: (req,res) => {
+    // const {id} = req.params;
+    res.status(200).send(beetle)
   }
 }

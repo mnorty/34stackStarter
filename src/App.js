@@ -3,18 +3,21 @@ import './App.css';
 import BeetleSorter from './Components/Käfer.sorter/BeetleSorter'
 import CommunitySection from './Components/Käfer.community/Beetle';
 import TopPic from './Components/Pictures/TopPic';
+import BottomPic from './Components/Pictures/BottomPic'
 
 
 function App() {
   return (
     <div className="App">
-      <header id='header'>Kafer Chasers</header>
+      <header id='header'>Käfer Chasers</header>
+      <div>
+        <TopPic/>
+      </div>
       <body className="middle">
-        <div className="paraPic">place holder for picture</div>
-        {/* <TopPic/> */}
         <BeetleSorter/>
-        {/* <TopPic/> */}
-        <div className="paraPic">place holder for picture</div>
+        <div>
+          <BottomPic/>
+        </div>
         <CommunitySection/>
       </body>
       <footer></footer>
