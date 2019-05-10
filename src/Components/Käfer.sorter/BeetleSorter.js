@@ -1,14 +1,21 @@
 import React from 'react';
 import AddBeetle from './AddField'
 import EditBeetle from './EditBeetle';
+import MidPic from '../Pictures/MidPic.js'
 
 function BeetleSorter() {
   return (
     <div className="BeetleSorter">
-      <body>
-        <div className='titleCard'>Small batch franzen tacos tote bag, helvetica readymade ethical squid health goth brooklyn semiotics kogi live-edge. Franzen austin XOXO forage. Pork belly deep v post-ironic sartorial, iPhone vegan glossier biodiesel craft beer. Master cleanse authentic cardigan chicharrones hexagon tattooed fam crucifix. Knausgaard mustache chillwave drinking vinegar waistcoat distillery trust fund post-ironic photo booth ennui brunch.
+      <body className="wilkommen">
+        <div className='titleCard'>
+        <h1>Wilkommen auf der Käfer Chasers Haubtseite!</h1>
+        <div>
+          <h4>Deutsches Ipsum Dolor quo Wurst posidonium Erbsenzähler adhuc bitte sadipscing Anwendungsprogrammierschnittstelle at, Kindergarten mei Krankenschwester gloriatur. Die Toten Hosen inermis bitte accommodare Wiener Würstchen Id Helmut Kohl assum Guten Tag te Freude schöner Götterfunken erroribus Nackenheim Nec Bier amet Weltschmerz iriure, Hockenheim gloriatur Autobahn ut. Bezirksschornsteinfegermeister virtute Milchreis per Schadenfreude At Mettwurst scaevola Stuttgart An Bier malorum Landjaeger ius
 
-Cloud bread tumblr everyday carry pug hella succulents, typewriter food truck cred locavore. Hammock bicycle rights etsy ugh raclette vexillologist chambray butcher yr, 8-bit plaid try-hard trust fund. Man braid heirloom banh mi +1 slow-carb banjo. Banjo jean shorts four dollar toast disrupt knausgaard. Master cleanse ugh PBR&B fanny pack ethical yr try-hard vegan hashtag fixie raw denim. Celiac etsy cloud bread adaptogen vexillologist. Meggings occupy raw denim biodiesel mumblecore cold-pressed, edison bulb brunch trust fund.</div>
+meliore Aufenthaltsgenehmigung et Deutsche Mark Te Bratwurst utamur Juttensack Exerci Frohsinn eu Siebentausendzweihundertvierundfünfzig Principes Grossbritannien eos Schwarzwälder Kirschtorte His Flughafen moderatius bitte at Aufschnitt omnis Wurst epicurei, Erbsenzähler feugait Schweinsteiger ei. Heisenberg purto Mettwurst te</h4>
+        </div>
+        </div>
+        <MidPic/>
         <AddBeetle/>
         <EditBeetle/>
       </body>

@@ -40,7 +40,7 @@ class EditBeetle extends Component {
   }
   render() {
 		return (
-			<div>
+			<div className="createEdit">
           <div className='createContainer'>
           <h1 className="addTitle">Edit Your Beetle Here</h1>
             <div>

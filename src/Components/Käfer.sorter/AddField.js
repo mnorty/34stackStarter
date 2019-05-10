@@ -34,7 +34,7 @@ class AddBeetle extends Component {
   }
   render() {
 		return (
-			<div>
+			<div className="createEdit">
           <div className='createContainer'>
           <h1 className="addTitle">Add Your Beetle Here</h1>
             <div>
