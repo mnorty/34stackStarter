@@ -15,6 +15,10 @@ class Beetle extends Component {
         this.handleGetBeetle()
     }
 
+    componentDidUpdate(){
+        this.handleGetBeetle()
+    }
+
     handleGetBeetle = () => {
         axios.get('http://localhost:5056/api/beetles')
         .then(res => {
