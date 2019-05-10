@@ -43,24 +43,25 @@ class EditBeetle extends Component {
 			<div className="createEdit">
           <div className='createContainer'>
           <h1 className="addTitle">Edit Your Beetle Here</h1>
-            <div>
-            <input
+            Year<input
+              className="inputField"
               onChange={e => this.handleYear(e.target.value)}
               type="text"
               placeholder='Enter your Year'
             />
-            <input
+            Image<input
+              className="inputField"
               onChange={e => this.handleImage(e.target.value)}
               type="text"
               placeholder='Image URL'
             />
-            <input
+            Car ID<input
+              className="inputField"
               onChange={e => this.handleID(e.target.value)}
               type="text"
               placeholder='Enter your ID'
             />
-            <button onClick={this.handleEditBeetle}>Gut Gemacht!</button>
-          </div>
+            <button onClick={this.handleEditBeetle} className="inputField">Gut Gemacht!</button>
         </div>
 			</div>
     )

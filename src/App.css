@@ -71,8 +71,8 @@ body{
 }
 .createContainer{
   background:lightgray;
-  height:20vh;
-  width:40vw;
+  min-height:20vh;
+  width:30vw;
   border-radius: 18px;
   margin-bottom:2em;
   display: flex;
@@ -84,6 +84,9 @@ body{
   display:flex;
   align-items: center;
   flex-direction:column;
+}
+.inputField{
+  margin-bottom:1em;
 }
 .wilkommen{
   display: flex;
