@@ -41,12 +41,14 @@ class AddBeetle extends Component {
             <input
               onChange={e => this.handleYear(e.target.value)}
               type="text"
+              placeholder='Enter your Year'
             />
             <input
               onChange={e => this.handleImage(e.target.value)}
               type="text"
+              placeholder='Image URL'
             />
-            <button onClick={this.handleAddBeetle}>Login</button>
+            <button onClick={this.handleAddBeetle}>Gut Gemacht!</button>
           </div>
         </div>
 			</div>

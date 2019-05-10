@@ -2,8 +2,18 @@
   background: lightgray;
   height: 1.8em;
   font-size:2em;
+  height:2em;
+  
 }
 
+button{
+  border:none;
+  border-radius: 18px;
+  background: lightgreen;
+  height:2em;
+  font-size: 1.2em;
+  font-weight:400;
+}
 /* .body{
   margin:3em ,0em;
   display: flex;
@@ -29,6 +39,7 @@
   border-radius: 18px;
   font-size:1.2em;
   font-weight: 600;
+  margin-bottom: 1em;
 }
 
 .beetleSorter{
