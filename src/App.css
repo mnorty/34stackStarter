@@ -3,13 +3,17 @@
   height: 2.7em;
   font-size:2em;
   height:2em;
+  display: flex;
+  align-items: center;
   
 }
-
+.logo{
+  margin-left:1em;
+}
 button{
   border:none;
   border-radius: 18px;
-  background: lightgreen;
+  background: lightblue;
   height:2em;
   font-size: 1.2em;
   font-weight:400;
@@ -29,7 +33,7 @@ body{
   width: 100%;
 }
 .titleCard{
-  background: lightgoldenrodyellow;
+  /* background: lightgoldenrodyellow; */
   min-height: 20vh;
   width: 50vw;
   border-radius: 18px;
@@ -67,7 +71,7 @@ body{
   margin-bottom:3em;
 }
 .createContainer{
-  background:lightblue;
+  background:lightgray;
   height:25vh;
   width:40vw;
   border-radius: 18px;

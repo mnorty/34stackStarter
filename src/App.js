@@ -9,7 +9,9 @@ import BottomPic from './Components/Pictures/BottomPic'
 function App() {
   return (
     <div className="App">
-      <header id='header'>Käfer Chasers</header>
+      <header id='header'>
+        <div className="logo">Käfer Chasers</div>
+      </header>
       <div>
         <TopPic/>
       </div>

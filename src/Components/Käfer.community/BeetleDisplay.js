@@ -13,10 +13,18 @@ class BeetleDisplay extends Component {
     render(){
         return (
         <div className="beetlePost">
-            <h4 className='beetle-year'>{this.props.beetle.year}</h4>
-            <img src={this.props.beetle.image} alt='"Groovy Bug man"' className='beetle-pictures'/>
-            <button className="postButton"onClick={this.handleDeleteBeetle}>Delete</button>   
-            <button className="postButton"onClick={this.handleDeleteBeetle}>Edit</button>     
+            <div>
+                <div className='postRight'>
+                    <h4 className='beetle-year'>Year: {this.props.beetle.year}</h4>
+                    <h4 className='beetle-id'>This Car's id: {this.props.beetle.id}</h4>
+                </div>
+                <div className="postRight">
+                    <button className="postButton"onClick={this.handleDeleteBeetle}>Delete</button>   
+                </div>
+            </div>
+            <div>
+                <img src={this.props.beetle.image} alt='"Groovy Bug man"' className='beetle-pictures'/> 
+            </div>
         </div>
     )
     }
