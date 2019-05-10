@@ -10,6 +10,16 @@ class AddBeetle extends Component {
     }
   }
 
+  handleYear(year) {
+    this.setState({year:year})
+    console.log(this.state.year)
+  }
+
+  handleImage(image) {
+    this.setState({image:image})
+    console.log(this.state.image)
+  }
+
   handleAddBeetle = (e) => {
 		e.preventDefault()
 		axios.post('/api/createbeetle', {
@@ -26,19 +36,17 @@ class AddBeetle extends Component {
 		return (
 			<div>
 				<h1>Add Beetle</h1>
-				<form onSubmit={this.handleAddBeetle}>
-					<input
-						placeholder='Beetle Year'
-						name='Beetle Year'
-						// onChange={this.handleAddBeetle}
-					/>
-					<input
-						placeholder='Beetle Image'
-						name='Beetle Image'
-						// onChange={this.handleAddBeetle}
-					/>
-					<button onClick={this.handleAddBeetle}>Add Beetle</button>
-				</form>
+				<div>
+        <input
+          onChange={e => this.handleYear(e.target.value)}
+          type="text"
+        />
+        <input
+          onChange={e => this.handleImage(e.target.value)}
+          type="text"
+        />
+        <button onClick={this.handleAddBeetle}>Login</button>
+      </div>
 			</div>
     )
   }
