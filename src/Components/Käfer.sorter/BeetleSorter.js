@@ -1,5 +1,6 @@
 import React from 'react';
 import AddBeetle from './AddField'
+import EditBeetle from './EditBeetle';
 
 function BeetleSorter() {
   return (
@@ -9,6 +10,7 @@ function BeetleSorter() {
 
 Cloud bread tumblr everyday carry pug hella succulents, typewriter food truck cred locavore. Hammock bicycle rights etsy ugh raclette vexillologist chambray butcher yr, 8-bit plaid try-hard trust fund. Man braid heirloom banh mi +1 slow-carb banjo. Banjo jean shorts four dollar toast disrupt knausgaard. Master cleanse ugh PBR&B fanny pack ethical yr try-hard vegan hashtag fixie raw denim. Celiac etsy cloud bread adaptogen vexillologist. Meggings occupy raw denim biodiesel mumblecore cold-pressed, edison bulb brunch trust fund.</div>
         <AddBeetle/>
+        <EditBeetle/>
       </body>
     </div>
   );

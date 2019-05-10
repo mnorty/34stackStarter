@@ -34,7 +34,12 @@ module.exports = {
     res.status(200).send(beetle)
   },
   changeBeetle: (req,res) => {
-    // const {id} = req.params;
+    console.log(req.body)
+    const newbeetle = {
+      year: req.body.year,
+      image: req.body.image,
+      id: id
+    }
+    beetle = [...beetle,newbeetle]
     res.status(200).send(beetle)
-  }
-}
+  },
