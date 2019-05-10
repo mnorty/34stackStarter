@@ -34,12 +34,13 @@ button{
 }
 .titleCard{
   background: lightgoldenrodyellow;
-  height: 40vh;
+  height: 30vh;
   width: 45vw;
   border-radius: 18px;
   font-size:1.2em;
   font-weight: 600;
   margin-bottom: 1em;
+  padding: 2em
 }
 
 .beetleSorter{
