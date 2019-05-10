@@ -15,7 +15,7 @@ function BeetleSorter() {
 meliore Aufenthaltsgenehmigung et Deutsche Mark Te Bratwurst utamur Juttensack Exerci Frohsinn eu Siebentausendzweihundertvierundfünfzig Principes Grossbritannien eos Schwarzwälder Kirschtorte His Flughafen moderatius bitte at Aufschnitt omnis Wurst epicurei, Erbsenzähler feugait Schweinsteiger ei. Heisenberg purto Mettwurst te</h4>
         </div>
         </div>
-        <MidPic/>
+        {/* <MidPic/> */}
         <AddBeetle/>
         <EditBeetle/>
       </body>
