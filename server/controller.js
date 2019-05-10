@@ -35,11 +35,19 @@ module.exports = {
   },
   changeBeetle: (req,res) => {
     console.log(req.body)
+    const {id} = req.params
     const newbeetle = {
       year: req.body.year,
       image: req.body.image,
-      id: id
     }
-    beetle = [...beetle,newbeetle]
+
+    let editBeetle = beetle.find(element => {
+      return element.id === +id
+    })
+    console.log(editBeetle)
+    editBeetle.year = newbeetle.year
+    editBeetle.image = newbeetle.image
+
     res.status(200).send(beetle)
   },
+}

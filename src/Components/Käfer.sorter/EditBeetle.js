@@ -28,11 +28,9 @@ class EditBeetle extends Component {
 
   handleEditBeetle = (e) => {
     e.preventDefault()
-    let id = this.state.id
-		axios.put(`/api/createbeetle?id=${id}`, {
+		axios.put(`/api/updatebeetle/${this.state.id}`, {
 				year: this.state.year,
         image: this.state.image,
-        id: this.state.id
       })
 			.then((res) => {
 				console.log(res)
