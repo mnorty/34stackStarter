@@ -5,8 +5,10 @@ import './Beetle.css';
 class BeetleDisplay extends Component {
     handleDeleteBeetle = () => {
         axios.delete(`/api/beetle/${this.props.beetle.id}`)
+        //this provides the url and the id we want to delete, it gets the logic for how to handle the delete from controller.js
         .then(res => {
             this.props.deleteBeetle(res.data)
+            // this is fired after we recieve the response from the server, res.data doesnt exist until we get a resonse from the server. 
         })
     }
 
