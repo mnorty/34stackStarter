@@ -18,7 +18,6 @@ button{
   height:2em;
   font-size: 1.2em;
   font-weight:400;
-  /* box-shadow: #212121; */
 }
 body{
   color:#212121;
@@ -94,6 +93,7 @@ body{
   box-shadow: #212121;
   border-radius: 15px;
   background:lightblue;
+  
 }
 .wilkommen{
   display: flex;
