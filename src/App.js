@@ -4,7 +4,7 @@ import BeetleSorter from './Components/Käfer.sorter/BeetleSorter'
 import CommunitySection from './Components/Käfer.community/Beetle';
 import TopPic from './Components/Pictures/TopPic';
 import BottomPic from './Components/Pictures/BottomPic'
-
+// all the various imports from other files. 
 
 function App() {
   return (

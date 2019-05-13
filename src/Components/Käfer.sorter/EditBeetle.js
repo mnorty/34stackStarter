@@ -54,24 +54,28 @@ class EditBeetle extends Component {
             Year<input
               className="inputField"
               onChange={e => this.handleYear(e.target.value)}
+              //when the imformation changes in the field it udates the state to match
               type="text"
               placeholder='Enter your Year'
             />
             Image<input
               className="inputField"
               onChange={e => this.handleImage(e.target.value)}
+              //when the imformation changes in the field it udates the state to match
               type="text"
               placeholder='Image URL'
             />
             Car ID<input
               className="inputField"
               onChange={e => this.handleID(e.target.value)}
+              //when the imformation changes in the field it udates the state to match
               type="text"
               placeholder='Enter your ID'
             />
             <button onClick={this.handleEditBeetle} className="inputField">Gut Gemacht!</button>
         </div>
 			</div>
+      // the last button runs handleEditBeetle initiates the request to the server
     )
   }
 }
